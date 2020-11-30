@@ -116,6 +116,19 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .1rem 1rem;
+}
+
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
@@ -542,7 +555,7 @@ section {
 
 .about .count-box span {
   font-size: 28px;
-  line-height: 24px;
+  line-height: 20px;
   display: block;
   font-weight: 700;
   color: #646c55;
@@ -584,7 +597,7 @@ section {
 
 .about .content ul {
   list-style: none;
-  padding: 0;
+  padding: 10;
 }
 
 .about .content ul li {
@@ -938,6 +951,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
 }
 
 .features .card-body {
@@ -1561,12 +1575,16 @@ section {
   margin-bottom: 60px;
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width:100%;
+ 
+  
 }
 
 .blog .entry .entry-img {
   max-height: 400px;
   margin: -20px -20px 20px -20px;
   overflow: hidden;
+  float: left;
 }
 
 .blog .entry .entry-title {
@@ -1580,6 +1598,7 @@ section {
 .blog .entry .entry-title a {
   color: #3c4133;
   transition: 0.3s;
+  padding-left: 50px;
 }
 
 .blog .entry .entry-title a:hover {
@@ -1595,8 +1614,9 @@ section {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0;
+  padding-left: 50px;
   margin: 0;
+
 }
 
 .blog .entry .entry-meta ul li + li {
@@ -1618,7 +1638,18 @@ section {
 .blog .entry .entry-content p {
   line-height: 24px;
   font-size: 15px;
-}
+  padding-left: 280px;
+  }
+
+
+
+
+
+
+
+
+
+
 
 .blog .entry .entry-content .read-more {
   -moz-text-align-last: right;
@@ -2235,26 +2266,25 @@ section {
 }
 
 
-
-
-
-
+/*--------------------------------------------------------------
+# Random
+--------------------------------------------------------------*/
 
 body{
-  margin-top:20px;
+  margin-top:12px;
   color: #1a202c;
   text-align: left;
   background-color: #e2e8f0;    
 }
 .main-body {
-  padding: 15px;
+  padding: 12px;
 }
 .card {
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
 }
 
 .card {
-  position: relative;
+  position: static;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -2263,12 +2293,13 @@ body{
   background-clip: border-box;
   border: 0 solid rgba(0,0,0,.125);
   border-radius: .25rem;
+  height:396px;
 }
 
 .card-body {
   flex: 1 1 auto;
-  min-height: 1px;
-  padding: 1rem;
+  min-height: 2px;
+  padding: 2rem;
 }
 
 .gutters-sm {
@@ -2292,4 +2323,45 @@ body{
 }
 .shadow-none {
   box-shadow: none!important;
+}
+
+.btn-primary{
+  align: center;
+
+}
+
+.container
+{
+ max-width: 98%;
+ margin-left: 1%;
+ margin-right: 1%;
+ box-sizing: border-box;
+}
+
+img.img-fluid{
+
+  height:200px;
+  
+}
+
+div.panel.panel-info{
+
+  background-color: #b1da65;
+  padding:20px;
+  margin-bottom: 20px;
+
+}
+
+
+#loginbox{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+ 
+}
+
+footer{
+
+  width:100%;
 }
